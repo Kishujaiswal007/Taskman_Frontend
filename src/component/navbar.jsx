@@ -5,7 +5,7 @@ const Card = () => {
   const navigate=useNavigate();
   const handleLogout=async(e)=>{
     e.preventDefault();
-    const response = await axios.get("https://taskman-backend-8lr2.onrender.com/logout",{
+    const response = await axios.get("https://taskman-backend-ii9p.onrender.com/logout",{
       headers: {
         "Authorization": "Bearer " + sessionStorage.getItem('accessToken')
       },

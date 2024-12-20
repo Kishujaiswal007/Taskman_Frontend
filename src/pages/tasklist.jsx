@@ -29,7 +29,7 @@ const Tasklist = () => {
   const handleDelete = async () => {
     try {
       if (selectedTasks.length > 0) {
-        await axios.delete("https://taskman-backend-8lr2.onrender.com/deleteTask", {
+        await axios.delete("https://taskman-backend-ii9p.onrender.com/deleteTask", {
           headers: {
             Authorization: "Bearer " + sessionStorage.getItem("accessToken"),
           },
@@ -53,7 +53,7 @@ const Tasklist = () => {
   };
 
   const fetchData = async () => {
-    const response = await axios.get("https://taskman-backend-8lr2.onrender.com/gettask", {
+    const response = await axios.get("https://taskman-backend-ii9p.onrender.com/gettask", {
       headers: {
         Authorization: "Bearer " + sessionStorage.getItem("accessToken"),
       },
