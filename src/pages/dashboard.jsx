@@ -10,7 +10,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("https://taskmanagementbackend-gkco.onrender.com/dashboard",{
+                const response = await axios.get("https://taskman-backend-8lr2.onrender.com/dashboard",{
                     headers: {
                       "Authorization": "Bearer " + sessionStorage.getItem('accessToken')
                     },
